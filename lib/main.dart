@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sample/mail_package.dart';
 import 'package:sample/sample_%20flutter_slidable.dart';
 import 'package:sample/sample_%20url_launcher.dart';
 import 'package:sample/sample_carousel_slider.dart';
+import 'package:sample/sample_image_picker.dart';
 import 'package:sample/sample_shared_preferences.dart';
 
 void main() {
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
         '/url_launcher': (BuildContext context) => SampleUrlLauncher(),
         '/flutter_slidable': (BuildContext context) => SampleSlidable(),
         '/carousel_slider': (BuildContext context) => ImageList(),
+        '/mail_packages': (BuildContext context) => MailPackage(),
+        '/image_picker': (BuildContext context) => SampleImagePicker(),
       },
       home: MyHomePage(),
     );
@@ -42,7 +46,9 @@ class MyHomePage extends StatelessWidget {
                 context, 'shared_preferences', '/shared_preferences'),
             buttonCompornent(context, 'url_launcher', '/url_launcher'),
             buttonCompornent(context, 'flutter_slidable', '/flutter_slidable'),
-            buttonCompornent(context, 'carousel_slider', '/carousel_slider')
+            buttonCompornent(context, 'carousel_slider', '/carousel_slider'),
+            buttonCompornent(context, 'mail_packages', '/mail_packages'),
+            buttonCompornent(context, 'image_picker', '/image_picker'),
           ],
         ),
       ),
