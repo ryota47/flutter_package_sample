@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sample/mail_package.dart';
-import 'package:sample/sample_%20flutter_slidable.dart';
-import 'package:sample/sample_%20url_launcher.dart';
-import 'package:sample/sample_carousel_slider.dart';
-import 'package:sample/sample_image_picker.dart';
-import 'package:sample/sample_shared_preferences.dart';
+import 'package:sample/packages/mail_package.dart';
+import 'package:sample/packages/sample_%20flutter_slidable.dart';
+import 'package:sample/packages/sample_%20url_launcher.dart';
+import 'package:sample/packages/sample_carousel_slider.dart';
+import 'package:sample/packages/sample_image_picker.dart';
+import 'package:sample/packages/sample_map_launcher.dart';
+import 'package:sample/packages/sample_shared_preferences.dart';
+import 'package:sample/widgets/sample_animated_container.dart';
+
+import 'widget_ catalog.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,6 +23,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: {
+        '/home': (BuildContext context) => MyHomePage(),
+        '/widget_catalog': (BuildContext context) => WidgetCatalog(),
         '/shared_preferences': (BuildContext context) =>
             SampleSharedPreferences(),
         '/url_launcher': (BuildContext context) => SampleUrlLauncher(),
@@ -26,6 +32,8 @@ class MyApp extends StatelessWidget {
         '/carousel_slider': (BuildContext context) => ImageList(),
         '/mail_packages': (BuildContext context) => MailPackage(),
         '/image_picker': (BuildContext context) => SampleImagePicker(),
+        '/map_launcher': (BuildContext context) => SampleMapLauncher(),
+        '/animatedContainer': (BuildContext context) => SampleAnimatedContainer(),
       },
       home: MyHomePage(),
     );
@@ -49,8 +57,29 @@ class MyHomePage extends StatelessWidget {
             buttonCompornent(context, 'carousel_slider', '/carousel_slider'),
             buttonCompornent(context, 'mail_packages', '/mail_packages'),
             buttonCompornent(context, 'image_picker', '/image_picker'),
+            buttonCompornent(context, 'map_launcher', '/map_launcher'),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.category),
+            title: Text('package'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.dashboard),
+            title: Text('Widget'),
+          ),
+        ],
+        onTap: (int index) {
+          if (index == 0) {
+            Navigator.of(context).pushNamed('/home');
+          } else if (index == 1) {
+            Navigator.of(context).pushNamed('/widget_catalog');
+          }
+        },
       ),
     );
   }

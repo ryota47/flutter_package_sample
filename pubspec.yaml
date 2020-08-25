@@ -35,6 +35,7 @@ dependencies:
   carousel_slider: ^2.2.1
   flutter_email_sender: ^3.0.1
   image_picker: ^0.6.7+6
+  map_launcher: ^0.12.0
 
 
 
