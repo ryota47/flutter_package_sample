@@ -18,7 +18,8 @@ class _WidgetCatalog extends State<WidgetCatalog> {
             buttonCompornent(
                 context, 'animatedContainer', '/animatedContainer'),
             buttonCompornent(context, 'opacity', '/opacity'),
-            buttonCompornent(context, 'FadeTransition', '/FadeTransition')
+            buttonCompornent(context, 'FadeTransition', '/FadeTransition'),
+            buttonCompornent(context, 'FloatingActionButton', '/FloatingActionButton')
           ],
         ),
       ),

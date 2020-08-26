@@ -8,6 +8,7 @@ import 'package:sample/packages/sample_map_launcher.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
+import 'package:sample/widgets/sample_floating_action_button.dart';
 import 'package:sample/widgets/sample_opacity.dart';
 
 import 'widget_ catalog.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/animatedContainer': (BuildContext context) => SampleAnimatedContainer(),
         '/opacity': (BuildContext context) => SampleOpacity(),
         '/FadeTransition':(BuildContext context) => SampleFadeTransition(),
+        '/FloatingActionButton': (BuildContext context) => SampleFloatingActionButton(),
       },
       home: MyHomePage(),
     );
