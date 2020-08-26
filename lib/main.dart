@@ -7,6 +7,8 @@ import 'package:sample/packages/sample_image_picker.dart';
 import 'package:sample/packages/sample_map_launcher.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
+import 'package:sample/widgets/sample_fade_transition.dart';
+import 'package:sample/widgets/sample_opacity.dart';
 
 import 'widget_ catalog.dart';
 
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
         '/image_picker': (BuildContext context) => SampleImagePicker(),
         '/map_launcher': (BuildContext context) => SampleMapLauncher(),
         '/animatedContainer': (BuildContext context) => SampleAnimatedContainer(),
+        '/opacity': (BuildContext context) => SampleOpacity(),
+        '/FadeTransition':(BuildContext context) => SampleFadeTransition(),
       },
       home: MyHomePage(),
     );

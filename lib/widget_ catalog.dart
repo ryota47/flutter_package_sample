@@ -17,6 +17,8 @@ class _WidgetCatalog extends State<WidgetCatalog> {
           children: [
             buttonCompornent(
                 context, 'animatedContainer', '/animatedContainer'),
+            buttonCompornent(context, 'opacity', '/opacity'),
+            buttonCompornent(context, 'FadeTransition', '/FadeTransition')
           ],
         ),
       ),
