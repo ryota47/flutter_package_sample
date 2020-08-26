@@ -10,6 +10,8 @@ import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
 import 'package:sample/widgets/sample_floating_action_button.dart';
 import 'package:sample/widgets/sample_opacity.dart';
+import 'package:sample/widgets/sample_page_view.dart';
+import 'package:sample/widgets/sample_table.dart';
 
 import 'widget_ catalog.dart';
 
@@ -40,6 +42,8 @@ class MyApp extends StatelessWidget {
         '/opacity': (BuildContext context) => SampleOpacity(),
         '/FadeTransition':(BuildContext context) => SampleFadeTransition(),
         '/FloatingActionButton': (BuildContext context) => SampleFloatingActionButton(),
+        '/PageView': (BuildContext context) => SamplePageView(),
+        '/Table': (BuildContext context) => SampleTable(),
       },
       home: MyHomePage(),
     );
