@@ -10,6 +10,7 @@ import 'package:sample/widgets/fade_image.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
 import 'package:sample/widgets/sample_floating_action_button.dart';
+import 'package:sample/widgets/sample_hero.dart';
 import 'package:sample/widgets/sample_opacity.dart';
 import 'package:sample/widgets/sample_page_view.dart';
 import 'package:sample/widgets/sample_sliver_List_Grid.dart';
@@ -48,6 +49,7 @@ class MyApp extends StatelessWidget {
         '/Table': (BuildContext context) => SampleTable(),
         '/SliverListGrid': (BuildContext context) => SampleSliverListGrid(),
         '/FadeImage': (BuildContext context) => SampleFadeImage(),
+        '/Hero': (BuildContext context) => SampleHero(),
       },
       home: MyHomePage(),
     );
