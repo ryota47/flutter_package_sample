@@ -22,6 +22,8 @@ class _WidgetCatalog extends State<WidgetCatalog> {
             buttonCompornent(context, 'FloatingActionButton', '/FloatingActionButton'),
             buttonCompornent(context, 'PageView', '/PageView'),
             buttonCompornent(context, 'Table', '/Table'),
+            buttonCompornent(context, 'SliverListGrid', '/SliverListGrid'),
+            buttonCompornent(context, 'FadeImage', '/FadeImage')
           ],
         ),
       ),
