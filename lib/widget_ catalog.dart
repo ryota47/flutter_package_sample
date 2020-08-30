@@ -12,20 +12,29 @@ class _WidgetCatalog extends State<WidgetCatalog> {
       appBar: AppBar(
         title: Text('Widget一覧'),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            buttonCompornent(
-                context, 'animatedContainer', '/animatedContainer'),
-            buttonCompornent(context, 'opacity', '/opacity'),
-            buttonCompornent(context, 'FadeTransition', '/FadeTransition'),
-            buttonCompornent(context, 'FloatingActionButton', '/FloatingActionButton'),
-            buttonCompornent(context, 'PageView', '/PageView'),
-            buttonCompornent(context, 'Table', '/Table'),
-            buttonCompornent(context, 'SliverListGrid', '/SliverListGrid'),
-            buttonCompornent(context, 'FadeImage', '/FadeImage'),
-            buttonCompornent(context, 'Hero', '/Hero'),
-          ],
+      body: AbsorbPointer(
+        // ignoringSemantics: true,
+        absorbing: false,
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                buttonCompornent(
+                    context, 'animatedContainer', '/animatedContainer'),
+                buttonCompornent(context, 'opacity', '/opacity'),
+                buttonCompornent(context, 'FadeTransition', '/FadeTransition'),
+                buttonCompornent(
+                    context, 'FloatingActionButton', '/FloatingActionButton'),
+                buttonCompornent(context, 'PageView', '/PageView'),
+                buttonCompornent(context, 'Table', '/Table'),
+                buttonCompornent(context, 'SliverListGrid', '/SliverListGrid'),
+                buttonCompornent(context, 'FadeImage', '/FadeImage'),
+                buttonCompornent(context, 'Hero', '/Hero'),
+                buttonCompornent(context, 'LayoutBuilder', '/LayoutBuilder'),
+                buttonCompornent(context, 'Transform', '/Transform'),
+              ],
+            ),
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(

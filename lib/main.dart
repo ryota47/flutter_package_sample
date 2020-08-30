@@ -7,10 +7,12 @@ import 'package:sample/packages/sample_image_picker.dart';
 import 'package:sample/packages/sample_map_launcher.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
 import 'package:sample/widgets/fade_image.dart';
+import 'package:sample/widgets/sample_%20transform.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
 import 'package:sample/widgets/sample_floating_action_button.dart';
 import 'package:sample/widgets/sample_hero.dart';
+import 'package:sample/widgets/sample_layout_builder.dart';
 import 'package:sample/widgets/sample_opacity.dart';
 import 'package:sample/widgets/sample_page_view.dart';
 import 'package:sample/widgets/sample_sliver_List_Grid.dart';
@@ -50,6 +52,8 @@ class MyApp extends StatelessWidget {
         '/SliverListGrid': (BuildContext context) => SampleSliverListGrid(),
         '/FadeImage': (BuildContext context) => SampleFadeImage(),
         '/Hero': (BuildContext context) => SampleHero(),
+        '/LayoutBuilder': (BuildContext context) => SampleLayputBuilder(),
+        '/Transform': (BuildContext context) => SampleTransform(),
       },
       home: MyHomePage(),
     );
