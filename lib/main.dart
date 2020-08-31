@@ -8,6 +8,7 @@ import 'package:sample/packages/sample_map_launcher.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
 import 'package:sample/widgets/animated_builder.dart';
 import 'package:sample/widgets/fade_image.dart';
+import 'package:sample/widgets/sample_%20draggable.dart';
 import 'package:sample/widgets/sample_%20transform.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
         '/Transform': (BuildContext context) => SampleTransform(),
         '/Dismissible': (BuildContext context) => SampleDismissible(),
         '/ValueListenableBuilder': (BuildContext context) => SampleValueListenableBuilder(),
+        '/Draggable': (BuildContext context) => SampleDraggable(),
       },
       home: MyHomePage(),
     );
