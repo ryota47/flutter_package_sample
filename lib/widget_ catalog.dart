@@ -32,6 +32,8 @@ class _WidgetCatalog extends State<WidgetCatalog> {
                 buttonCompornent(context, 'Hero', '/Hero'),
                 buttonCompornent(context, 'LayoutBuilder', '/LayoutBuilder'),
                 buttonCompornent(context, 'Transform', '/Transform'),
+                buttonCompornent(context, 'Dismissible', '/Dismissible'),
+                buttonCompornent(context, 'ValueListenableBuilder', '/ValueListenableBuilder'),
               ],
             ),
           ),

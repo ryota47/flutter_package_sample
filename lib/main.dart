@@ -6,6 +6,7 @@ import 'package:sample/packages/sample_carousel_slider.dart';
 import 'package:sample/packages/sample_image_picker.dart';
 import 'package:sample/packages/sample_map_launcher.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
+import 'package:sample/widgets/animated_builder.dart';
 import 'package:sample/widgets/fade_image.dart';
 import 'package:sample/widgets/sample_%20transform.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
@@ -17,6 +18,7 @@ import 'package:sample/widgets/sample_opacity.dart';
 import 'package:sample/widgets/sample_page_view.dart';
 import 'package:sample/widgets/sample_sliver_List_Grid.dart';
 import 'package:sample/widgets/sample_table.dart';
+import 'package:sample/widgets/value_listenable_builder.dart';
 
 import 'widget_ catalog.dart';
 
@@ -54,6 +56,8 @@ class MyApp extends StatelessWidget {
         '/Hero': (BuildContext context) => SampleHero(),
         '/LayoutBuilder': (BuildContext context) => SampleLayputBuilder(),
         '/Transform': (BuildContext context) => SampleTransform(),
+        '/Dismissible': (BuildContext context) => SampleDismissible(),
+        '/ValueListenableBuilder': (BuildContext context) => SampleValueListenableBuilder(),
       },
       home: MyHomePage(),
     );
