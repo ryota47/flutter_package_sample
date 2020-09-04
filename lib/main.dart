@@ -11,12 +11,17 @@ import 'package:sample/widgets/fade_image.dart';
 import 'package:sample/widgets/sample_%20draggable.dart';
 import 'package:sample/widgets/sample_%20transform.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
+import 'package:sample/widgets/sample_animated_icon.dart';
+import 'package:sample/widgets/sample_data_table.dart';
+import 'package:sample/widgets/sample_draggable_scrollable_sheet.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
 import 'package:sample/widgets/sample_floating_action_button.dart';
 import 'package:sample/widgets/sample_hero.dart';
+import 'package:sample/widgets/sample_indexed_stack.dart';
 import 'package:sample/widgets/sample_layout_builder.dart';
 import 'package:sample/widgets/sample_opacity.dart';
 import 'package:sample/widgets/sample_page_view.dart';
+import 'package:sample/widgets/sample_place_holder.dart';
 import 'package:sample/widgets/sample_sliver_List_Grid.dart';
 import 'package:sample/widgets/sample_table.dart';
 import 'package:sample/widgets/value_listenable_builder.dart';
@@ -60,6 +65,11 @@ class MyApp extends StatelessWidget {
         '/Dismissible': (BuildContext context) => SampleDismissible(),
         '/ValueListenableBuilder': (BuildContext context) => SampleValueListenableBuilder(),
         '/Draggable': (BuildContext context) => SampleDraggable(),
+        '/AnimatedIcon': (BuildContext context) => SampleAnimatedIcons(),
+        '/PlaceHolder': (BuildContext context) => SamplePlaceHolder(),
+        '/IndexedStack': (BuildContext context) => SampleIndexedStack(),
+        '/DataTable': (BuildContext context) => SampleDataTable(),
+        '/DraggableScrollableSheet': (BuildContext context) => SampleDraggableScrollableSheet(),
       },
       home: MyHomePage(),
     );

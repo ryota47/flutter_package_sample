@@ -35,6 +35,11 @@ class _WidgetCatalog extends State<WidgetCatalog> {
                 buttonCompornent(context, 'Dismissible', '/Dismissible'),
                 buttonCompornent(context, 'ValueListenableBuilder', '/ValueListenableBuilder'),
                 buttonCompornent(context, 'Draggable', '/Draggable'),
+                buttonCompornent(context, 'AnimatedIcon', '/AnimatedIcon'),
+                buttonCompornent(context, 'PlaceHolder', '/PlaceHolder'),
+                buttonCompornent(context, 'IndexedStack', '/IndexedStack'),
+                buttonCompornent(context, 'DataTable', '/DataTable'),
+                buttonCompornent(context, 'DraggableScrollableSheet', '/DraggableScrollableSheet')
               ],
             ),
           ),
