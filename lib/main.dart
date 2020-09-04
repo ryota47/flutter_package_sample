@@ -25,6 +25,7 @@ import 'package:sample/widgets/sample_page_view.dart';
 import 'package:sample/widgets/sample_place_holder.dart';
 import 'package:sample/widgets/sample_sliver_List_Grid.dart';
 import 'package:sample/widgets/sample_table.dart';
+import 'package:sample/widgets/sample_toggle_buttons.dart';
 import 'package:sample/widgets/value_listenable_builder.dart';
 
 import 'widget_ catalog.dart';
@@ -72,6 +73,7 @@ class MyApp extends StatelessWidget {
         '/DataTable': (BuildContext context) => SampleDataTable(),
         '/DraggableScrollableSheet': (BuildContext context) => SampleDraggableScrollableSheet(),
         '/ColorFlitered': (BuildContext context) => SampleColorFlitered(),
+        '/ToggleButton': (BuildContext context) => SampleToggleButton(),
       },
       home: MyHomePage(),
     );

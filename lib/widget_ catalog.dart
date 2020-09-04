@@ -41,6 +41,7 @@ class _WidgetCatalog extends State<WidgetCatalog> {
                 buttonCompornent(context, 'DataTable', '/DataTable'),
                 buttonCompornent(context, 'DraggableScrollableSheet', '/DraggableScrollableSheet'),
                 buttonCompornent(context, 'ColorFlitered', '/ColorFlitered'),
+                buttonCompornent(context, 'ToggleButton', '/ToggleButton')
               ],
             ),
           ),
