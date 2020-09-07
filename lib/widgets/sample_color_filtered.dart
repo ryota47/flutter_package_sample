@@ -14,17 +14,26 @@ class _SampleColorFlitered extends State<SampleColorFlitered> {
       ),
       body: Center(
         child: Table(
+          // defaultColumnWidth: FlexColumnWidth(1),
+          defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
           children: [
-            TableRow(children: [
-              Image.asset('images/sample1.png'),
-              Image.asset(
-                'images/sample1.png',
-                color: Colors.red,
-              ),              Image.asset(
-                'images/sample1.png',
-                color: Colors.red,
-              ),
-            ]),
+            TableRow(
+              children: [
+                Image.asset('images/sample1.png'),
+                SizedBox(),
+                Image.asset(
+                  'images/sample1.png',
+                  color: Colors.red,
+                ),
+              ],
+            ),
+            TableRow(
+              children: [
+                Text('ただの画像'),
+                SizedBox(),
+                Text('画像の色変更'),
+              ],
+            ),
             TableRow(
               children: [
                 ColorFiltered(
@@ -33,15 +42,23 @@ class _SampleColorFlitered extends State<SampleColorFlitered> {
                   child: Image.asset('images/sample1.png'),
                 ),
                 ColorFiltered(
-                  colorFilter: ColorFilter.mode(Colors.green, BlendMode.dstIn),
+                  colorFilter: ColorFilter.mode(Colors.green, BlendMode.lighten),
                   child: Image.asset('images/sample1.png'),
                 ),
                 ColorFiltered(
-                  colorFilter: ColorFilter.mode(Colors.green, BlendMode.modulate),
+                  colorFilter:
+                      ColorFilter.mode(Colors.green, BlendMode.modulate),
                   child: Image.asset('images/sample1.png'),
                 )
               ],
-            )
+            ),
+            TableRow(
+              children: [
+                Text('BlendMode.\ncolorBurn)'),
+                Text('BlendMode.\nlighten'),
+                Text('BlendMode.\nmodulate'),
+              ],
+            ),
           ],
         ),
       ),
