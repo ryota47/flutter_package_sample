@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class SampleTransform extends StatefulWidget {
@@ -27,30 +25,66 @@ class _SampleTransform extends State<SampleTransform>
     return Scaffold(
       appBar: AppBar(
         title: Text('Transform'),
-        backgroundColor: Colors.yellow,
       ),
-      body: Container(
-        child: Transform(
-            // Transform widget
-            transform: Matrix4.identity()
-              ..setEntry(3, 2, 0.001) // perspective
-              // ..rotateX(0.01 * _offset.dy) // changed
-              ..rotateY(-0.01 * _offset.dx), // changed
-            alignment: FractionalOffset.center,
-            child: GestureDetector(
-              // new
-              onPanUpdate: (details) =>
-                  setState(() => _offset += details.delta),
-              onDoubleTap: () => setState(() => _offset = Offset.zero),
-              child: redContainder(),
-            )),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.yellow,
-        shape: const CircularNotchedRectangle(),
-        child: Container(
-          height: 50.0,
-        ),
+      body: Stack(
+        children: [
+          Container(
+            child: Transform(
+              transform: Matrix4.identity()
+                ..setEntry(3, 2, 0.001) 
+                ..rotateY(-0.05 * _offset.dx), 
+              alignment: FractionalOffset.centerLeft,
+              child: GestureDetector(
+                onPanUpdate: (details) =>
+                    setState(() => _offset += details.delta),
+                onDoubleTap: () => setState(() => _offset = Offset.zero),
+                child: redContainder(),
+              ),
+            ),
+          ),
+          Container(
+            child: Transform(
+              transform: Matrix4.identity()
+                ..setEntry(3, 2, 0.001)
+                ..rotateY(-0.05 * _offset.dx + 1.57), 
+              alignment: FractionalOffset.centerLeft,
+              child: GestureDetector(
+                onPanUpdate: (details) =>
+                    setState(() => _offset += details.delta),
+                onDoubleTap: () => setState(() => _offset = Offset.zero),
+                child: blueContainder(),
+              ),
+            ),
+          ),
+          Container(
+            child: Transform(
+              transform: Matrix4.identity()
+                ..setEntry(3, 2, 0.001)
+                ..rotateY(-0.05 * _offset.dx + 3.14),
+              alignment: FractionalOffset.centerLeft,
+              child: GestureDetector(
+                onPanUpdate: (details) =>
+                    setState(() => _offset += details.delta),
+                onDoubleTap: () => setState(() => _offset = Offset.zero),
+                child: yellowContainder(),
+              ),
+            ),
+          ),
+                    Container(
+            child: Transform(
+              transform: Matrix4.identity()
+                ..setEntry(3, 2, 0.001) 
+                ..rotateY(-0.05 * _offset.dx + 4.71),
+              alignment: FractionalOffset.centerLeft,
+              child: GestureDetector(
+                onPanUpdate: (details) =>
+                    setState(() => _offset += details.delta),
+                onDoubleTap: () => setState(() => _offset = Offset.zero),
+                child: greenContainder(),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -61,7 +95,52 @@ class _SampleTransform extends State<SampleTransform>
       height: double.infinity,
       color: Colors.red,
       child: Center(
-        child: Text('結局使いこなせない。\nいいUI見つけたらそれ練習がてら作ろ',style: TextStyle(fontWeight: FontWeight.bold),),
+        child: Text(
+          'あか',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+
+  blueContainder() {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.blue,
+      child: Center(
+        child: Text(
+          'あおい',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+
+  yellowContainder() {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.yellow,
+      child: Center(
+        child: Text(
+          'きいろ',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+
+    greenContainder() {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.green,
+      child: Center(
+        child: Text(
+          'みどり',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

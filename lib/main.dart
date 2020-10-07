@@ -13,6 +13,7 @@ import 'package:sample/widgets/sample_%20transform.dart';
 import 'package:sample/widgets/sample_animated_container.dart';
 import 'package:sample/widgets/sample_animated_icon.dart';
 import 'package:sample/widgets/sample_color_filtered.dart';
+import 'package:sample/widgets/sample_copy.dart';
 import 'package:sample/widgets/sample_data_table.dart';
 import 'package:sample/widgets/sample_draggable_scrollable_sheet.dart';
 import 'package:sample/widgets/sample_fade_transition.dart';
@@ -74,6 +75,7 @@ class MyApp extends StatelessWidget {
         '/DraggableScrollableSheet': (BuildContext context) => SampleDraggableScrollableSheet(),
         '/ColorFlitered': (BuildContext context) => SampleColorFlitered(),
         '/ToggleButton': (BuildContext context) => SampleToggleButton(),
+        '/SampleCopy': (BuildContext cotext) => SampleCopy(),
       },
       home: MyHomePage(),
     );
