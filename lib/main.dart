@@ -5,6 +5,7 @@ import 'package:sample/packages/sample_%20url_launcher.dart';
 import 'package:sample/packages/sample_carousel_slider.dart';
 import 'package:sample/packages/sample_image_picker.dart';
 import 'package:sample/packages/sample_map_launcher.dart';
+import 'package:sample/packages/sample_multi_image.dart';
 import 'package:sample/packages/sample_shared_preferences.dart';
 import 'package:sample/widgets/animated_builder.dart';
 import 'package:sample/widgets/fade_image.dart';
@@ -76,6 +77,7 @@ class MyApp extends StatelessWidget {
         '/ColorFlitered': (BuildContext context) => SampleColorFlitered(),
         '/ToggleButton': (BuildContext context) => SampleToggleButton(),
         '/SampleCopy': (BuildContext cotext) => SampleCopy(),
+        '/SampleMulti': (BuildContext context) => SampleMulti(),
       },
       home: MyHomePage(),
     );
@@ -100,6 +102,7 @@ class MyHomePage extends StatelessWidget {
             buttonCompornent(context, 'mail_packages', '/mail_packages'),
             buttonCompornent(context, 'image_picker', '/image_picker'),
             buttonCompornent(context, 'map_launcher', '/map_launcher'),
+            buttonCompornent(context, 'SampleMulti', '/SampleMulti ')
           ],
         ),
       ),
